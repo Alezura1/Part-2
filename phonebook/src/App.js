@@ -62,7 +62,7 @@ const App = () => {
     }
     else{
       personService
-      .create(personObject.id)
+      .create(personObject)
       .then(setPersons(persons.concat(personObject)),
         setNewName(''),
         setNewNumber('')
